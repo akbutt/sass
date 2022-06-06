@@ -304,6 +304,14 @@ body {
           transform: translateY(0);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .card {
   -webkit-perspective: 150rem;
           perspective: 150rem;
@@ -718,6 +726,7 @@ body {
 }
 
 .section-stories {
+  position: relative;
   padding: 15rem 0;
   background-color: #f7f7f7;
 }
