@@ -183,6 +183,11 @@ body {
   margin-bottom: 3rem;
 }
 
+.booking12 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -560,6 +565,15 @@ body {
           transform: translateY(-1.5rem) scale(1.03);
 }
 
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  font-family: inherit;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
 .story {
   width: 89%;
   margin: 0 auto;
@@ -747,9 +761,16 @@ body {
 }
 
 .book {
-  background-image: url(../../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
-  height: 50rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 38rem;
+}
+
+.book__form {
+  width: 50%;
+  padding: 6rem;
 }
 /*# sourceMappingURL=main.css.map */
