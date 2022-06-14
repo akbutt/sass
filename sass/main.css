@@ -576,7 +576,9 @@ body {
   font-family: inherit;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
-  outline: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
 }
 
 .form__input:focus {
@@ -584,6 +586,10 @@ body {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #55c57a;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #999;
 }
 
 .story {

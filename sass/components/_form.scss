@@ -10,18 +10,26 @@ border-radius: 2px;
 font-family: inherit;
 background-color: rgba($color-white, .5);
     border: none;
-    outline: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+
+    &:focus{
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        border-bottom: 3px solid $color-primary;
+   }
+
+   &::-webkit-input-placeholder{
+       color: $color-grey-dark-2;
+   } 
     }
 
-    &__input:focus{
-         outline: none;
-         box-shadow: 0 1rem 2rem rgba($color-black, .1);
-         border-bottom: 3px solid $color-primary;
-    }
+  
 
-    &__label{
+    // &__label{
 
-    }
+    // }
 
 
 }
