@@ -116,22 +116,40 @@
     }
 
     &::before,
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        transition: all .2s;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
     }
 
-    &::before{top: -.8rem; }
-   &::after{top: .8rem;}
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
   }
 
-  &__button:hover &__icon::before{
-top: -1rem;
+  &__button:hover &__icon::before {
+    top: -1rem;
   }
 
-  &__button:hover &__icon::after{
+  &__button:hover &__icon::after {
     top: 1rem;
-      }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
+  }
 }

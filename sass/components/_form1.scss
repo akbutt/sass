@@ -7,17 +7,18 @@
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    font-family: inherit;
-    color: inherit;
+    // font-family: inherit;
+    // color: inherit;
     background-color: rgba($color-white, 0.5);
     border: none;
+    outline: none;
     border-bottom: 3px solid transparent;
-    width: 90%;
+    width: 99%;
     display: block;
     transition: all .3s;
 
     &:focus {
-    outline: none;
+      outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
       border-bottom: 3px solid $color-primary;
     }
