@@ -18,6 +18,29 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> natours</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>your benefits</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>popular tours</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>stories</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>book now</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="logo" class="header__logo" />
@@ -314,7 +337,7 @@
                 <label for="email" class="label__form">email address</label>
               </div>
 
-            <div class="form__group">
+            <div class="form__group u-margin-bottom-medium">
               <div class="form__radio-group">
                 <input type="radio" class="form__radio-input" id="small" name="size">
                 <label for="small" class="form__radio-label">
@@ -330,22 +353,44 @@
                   large tour group
                 </label>
               </div>
-
             </div>
-
+  
+               <div class="form__group">
+                <button class="btn btn--green">Next Step &rarr;</button>
+               </div>
+             
               </form>
             </div>
          </div>
       </div>
      </section>
-
-
-
-
-
     </main>
+      
+        <footer class="footer">
+          <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo">
+          </div>
+          <div class="row">
+            <div class="col-1-of-2">
+              <div class="footer__navigation">
+                <ul class="footer__list">
+                  <li class="footer__item"><a href="#" class="footer__link">company</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">contact us</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">carrers</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">privacy policy</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">terms</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1-of-2">
+              <p class="footer__copyright">
+                build by <a href="#" class="footer__link">ak butt</a>.  for his practice section  <a href="#" class="footer__link">advance css and sass</a>. copyright &copy; by ak butt . you are 100% allowed to use this webpage for both personal and commercial use, but not to claim it as your own drsign. a credit to the original author,  ak butt , is ofcourse hihly appreciated! 
+              </p>
+            </div>
+          </div>
+        </footer>
 
-    <!--
+    <!-- 
         <section class="grid-test">
             <div class="row">
                 <div class="col-1-of-2">

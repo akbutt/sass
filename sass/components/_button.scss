@@ -1,4 +1,5 @@
 .btn{
+    &,
     &:link,
     &:visited{
     text-decoration: none;
@@ -8,7 +9,12 @@
     transition: all .2s;
     position: relative;
     font-size: $default-font-size;
+
+    //change for buttom element
+    border: none;
+    cursor: pointer;
     }
+
     &:hover{
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
@@ -18,7 +24,9 @@
             opacity: 0;
         }
     }
-    &:active{
+    &:active,
+    &:focus{
+        outline: none;
      transform: translateY(-1px);
      box-shadow: 0 .5rem 1rem  rgba($color-black, .2);
     }
