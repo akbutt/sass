@@ -18,28 +18,39 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
+      <div class="navigation__background">&nbsp;</div>
 
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> natours</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>your benefits</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>popular tours</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>stories</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>book now</a></li>
-          </ul>
-        </nav>
-      </div>
-
-
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span> natours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <header class="header">
       <div class="header__logo-box">
@@ -50,7 +61,7 @@
           <span class="heading-primary--main">OUTDOORS</span>
           <span class="heading-primary--sub">IS WHERE LIFE HAPPENS</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animation">DISCOVER OUR TOURS</a>
+        <a href="#section-chill" class="btn btn--white btn--animation">DISCOVER OUR TOURS</a>
       </div>
     </header>
 
@@ -164,15 +175,14 @@
         </div>
       </section>
 
-      <section class="section-chill">
-
+      <section class="section-chill" id="section-chill">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">most popular tours</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-3">
-          <div class="card">
+            <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--1">&nbsp;</div>
                 <h4 class="card__heading">
@@ -190,19 +200,19 @@
                   </ul>
                 </div>
               </div>
-             <div class="card__side card__side--back card__side--back-1">
+              <div class="card__side card__side--back card__side--back-1">
                 <div class="card__cta">
                   <div class="card__price-box">
-                      <p class="card__price-only">only</p>
-                      <p class="card__price-value">$297</p>
+                    <p class="card__price-only">only</p>
+                    <p class="card__price-value">$297</p>
                   </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
-             </div>
-          </div>
+              </div>
+            </div>
           </div>
 
-                        <!-- //2 -->
+          <!-- //2 -->
 
           <div class="col-1-of-3">
             <div class="card">
@@ -223,19 +233,19 @@
                   </ul>
                 </div>
               </div>
-             <div class="card__side card__side--back card__side--back-2">
+              <div class="card__side card__side--back card__side--back-2">
                 <div class="card__cta">
                   <div class="card__price-box">
-                      <p class="card__price-only">only</p>
-                      <p class="card__price-value">$497</p>
+                    <p class="card__price-only">only</p>
+                    <p class="card__price-value">$497</p>
                   </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
-             </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-                         <!-- ///3? -->
+          <!-- ///3? -->
 
           <div class="col-1-of-3">
             <div class="card">
@@ -256,145 +266,221 @@
                   </ul>
                 </div>
               </div>
-             <div class="card__side card__side--back card__side--back-3">
+              <div class="card__side card__side--back card__side--back-3">
                 <div class="card__cta">
                   <div class="card__price-box">
-                      <p class="card__price-only">only</p>
-                      <p class="card__price-value">$897</p>
+                    <p class="card__price-only">only</p>
+                    <p class="card__price-value">$897</p>
                   </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
-             </div>
-          </div>
-          </div>
-          </div>
-
-          <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn btn--green">Discover all Tours</a>
-          </div>
-      </section>
-
-
-     <section class="section-stories">
-
-     <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop>
-          <source src="img/video.mp4" type="video/mp4">
-          <source src="img/video.webm" type="video/webm">
-          your browser is not supportes!
-        </video>
-     </div>     
-
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">we make people genuinely happy</h2>
-      </div>
-           <div class="row">
-                <div class="story">
-                  <figure class="story__shape">
-                    <img src="img/nat-8.jpg" alt="person on a tour" class="story__img">
-                  </figure>
-                  <figcaption class="story__caption">Mary <br>Smith  </figcaption>
-                  <div class="story__text"><h3 class="heading-tertiary u-margin-bottom-small">i had best week ever with my family</h3>
-                     <p>Loremdolorum optio doloremque a commodi saepe officiis ipsum dolor, sit amet consectetur  . Animi nam sapiente deleniti nemo dolorum optio doloremque a commodi saepe officiis?</p>
-                  </div>
-                </div>
-           </div>
-
-           <div class="row">
-            <div class="story">
-              <figure class="story__shape">
-                <img src="img/nat-9.jpg" alt="person on a tour" class="story__img">
-              </figure>
-              <figcaption class="story__caption">Jack<br>Walson  </figcaption>
-              <div class="story__text"><h3 class="heading-tertiary u-margin-bottom-small"> wow! my life is completely different now</h3>
-                 <p>Loremdolorum optio doloremque a commodi saepe officiis ipsum dolor, sit amet consectetur  . Animi nam sapiente deleniti nemo dolorum optio doloremque a commodi saepe officiis?</p>
               </div>
             </div>
-       </div>
+          </div>
+        </div>
 
-       <div class="u-center-text u-margin-top-huge">
-        <a href="#" class="btn-text">Read all stories</a>
-      </div>
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--green">Discover all Tours</a>
+        </div>
+      </section>
 
-     </section>
-          
-     <section class="section-booking">
-      <div class="row">
-         <div class="book">
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            your browser is not supportes!
+          </video>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">we make people genuinely happy</h2>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-8.jpg"
+                alt="person on a tour"
+                class="story__img"
+              />
+            </figure>
+            <figcaption class="story__caption">Mary <br />Smith</figcaption>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                i had best week ever with my family
+              </h3>
+              <p>
+                Loremdolorum optio doloremque a commodi saepe officiis ipsum
+                dolor, sit amet consectetur . Animi nam sapiente deleniti nemo
+                dolorum optio doloremque a commodi saepe officiis?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-9.jpg"
+                alt="person on a tour"
+                class="story__img"
+              />
+            </figure>
+            <figcaption class="story__caption">Jack<br />Walson</figcaption>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                wow! my life is completely different now
+              </h3>
+              <p>
+                Loremdolorum optio doloremque a commodi saepe officiis ipsum
+                dolor, sit amet consectetur . Animi nam sapiente deleniti nemo
+                dolorum optio doloremque a commodi saepe officiis?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn-text">Read all stories</a>
+        </div>
+      </section>
+
+      <section class="section-booking">
+        <div class="row">
+          <div class="book">
             <div class="book__form">
               <form action="#" class="form">
-                <div class=" u-margin-bottom-medium ">
+                <div class="u-margin-bottom-medium">
                   <h2 class="heading-secondary booking12">start booking now</h2>
                 </div>
 
                 <div class="form__group">
-                <input type="text" class="input__form" placeholder="Full Name" id="name" required>
-                <label for="name" class="label__form">Full Name</label>
-              </div>
+                  <input
+                    type="text"
+                    class="input__form"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="label__form">Full Name</label>
+                </div>
 
-              <div class="form__group">
-                <input type="email" class="input__form" placeholder="email address" id="email" required>
-                <label for="email" class="label__form">email address</label>
-              </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="input__form"
+                    placeholder="email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="label__form">email address</label>
+                </div>
 
-            <div class="form__group u-margin-bottom-medium">
-              <div class="form__radio-group">
-                <input type="radio" class="form__radio-input" id="small" name="size">
-                <label for="small" class="form__radio-label">
-                  <span class="form__radio-button"></span>
-                  small tour group
-                </label>
-              </div>
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      small tour group
+                    </label>
+                  </div>
 
-              <div class="form__radio-group">
-                <input type="radio" class="form__radio-input" id="large" name="size">
-                <label for="large" class="form__radio-label">
-                  <span class="form__radio-button"></span>
-                  large tour group
-                </label>
-              </div>
-            </div>
-  
-               <div class="form__group">
-                <button class="btn btn--green">Next Step &rarr;</button>
-               </div>
-             
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      large tour group
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Next Step &rarr;</button>
+                </div>
               </form>
             </div>
-         </div>
-      </div>
-     </section>
+          </div>
+        </div>
+      </section>
     </main>
-      
-        <footer class="footer">
-          <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo">
-          </div>
-          <div class="row">
-            <div class="col-1-of-2">
-              <div class="footer__navigation">
-                <ul class="footer__list">
-                  <li class="footer__item"><a href="#" class="footer__link">company</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">contact us</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">carrers</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">privacy policy</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">terms</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-1-of-2">
-              <p class="footer__copyright">
-                build by <a href="#" class="footer__link">ak butt</a>.  for his practice section  <a href="#" class="footer__link">advance css and sass</a>. copyright &copy; by ak butt . you are 100% allowed to use this webpage for both personal and commercial use, but not to claim it as your own drsign. a credit to the original author,  ak butt , is ofcourse hihly appreciated! 
-              </p>
-            </div>
-          </div>
-        </footer>
 
-  <div class="popup">
-    <div class="popup__content">
-      popup
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            build by <a href="#" class="footer__link">ak butt</a>. for his
+            practice section
+            <a href="#" class="footer__link">advance css and sass</a>. copyright
+            &copy; by ak butt . you are 100% allowed to use this webpage for
+            both personal and commercial use, but not to claim it as your own
+            drsign. a credit to the original author, ak butt , is ofcourse hihly
+            appreciated!
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="tour photo" class="popup__img" />
+        </div>
+
+        <div class="popup__right">
+          <a href="#section-chill" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-medium">START BOOHING NOW</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            important &ndash; please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse odit
+            ipsum minima repellendus aliquid modi assumenda quasi laudantium.
+            Iure temporibus incidunt accusamus nam magni. Veniam, nulla, atque
+            consequatur voluptate similique officiis, provident iste distinctio
+            sit et dicta ducimus esse sed! Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. 
+          </p>
+          <a href="#" class="btn btn--green">BOOK NOW</a>
+        </div>
+      </div>
     </div>
-  </div>
 
     <!-- 
         <section class="grid-test">
