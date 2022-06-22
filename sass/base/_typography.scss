@@ -4,13 +4,15 @@ body{
     /* font-size: 16px; */
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 3rem;
+   
     
 }
 .heading-primary{
     color: $color-white;
     backface-visibility: hidden;
     margin-bottom: 6rem;
+
+ 
     &--main{
         display: block;
         font-size: 6rem;
@@ -19,6 +21,12 @@ body{
         animation-name: moveinleft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond (phone) {
+    
+        }
+          
+
         }
         &--sub{
         display: block;

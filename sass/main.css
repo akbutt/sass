@@ -5,7 +5,15 @@
 1200 - 1800: is our normal style
 1800px+:  big desktop
 
+$breakpoint argument choices:
+-phone
+-tab_port
+-tab_land
+-big_desktop
 
+order: base + typogyaphy >  general layout + grid > page layout > components
+
+1em=16px
 */
 @-webkit-keyframes moveinleft {
   0% {
@@ -113,9 +121,34 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
+  padding: 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
 }
 
 body {
@@ -124,7 +157,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
 }
 
 .heading-primary {
