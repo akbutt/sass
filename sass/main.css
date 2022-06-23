@@ -133,6 +133,12 @@ html {
   }
 }
 
+@media (max-width: 38em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 @media (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -179,6 +185,13 @@ body {
           animation-timing-function: ease-out;
 }
 
+@media (max-width: 38em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-family: 5rem;
+  }
+}
+
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -186,6 +199,12 @@ body {
   letter-spacing: 1.35rem;
   -webkit-animation: moveinright 1s ease-out;
           animation: moveinright 1s ease-out;
+}
+
+@media (max-width: 38em) {
+  .heading-primary--sub {
+    letter-spacing: .5rem;
+  }
 }
 
 .heading-secondary {
@@ -200,6 +219,18 @@ body {
   -webkit-transition: all .2s;
   transition: all .2s;
   letter-spacing: .2rem;
+}
+
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-secondary:hover {
@@ -934,12 +965,25 @@ body {
 }
 
 .row {
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
 .row:not(:last-child) {
   margin-bottom: 8rem;
+}
+
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+    width: 50rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 60rem;
+  }
 }
 
 .row::after {
@@ -954,6 +998,25 @@ body {
 
 .row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
+}
+
+@media (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 38em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
 }
 
 .row .col-1-of-2 {

@@ -3,7 +3,17 @@
  margin: 0 auto;
  &:not(:last-child){
     margin-bottom: $gutter-vertical;
+
+    @include respond (tab_port) {
+     margin-bottom: $gutter-vertical-small;
+     width: 50rem;
+     }
  }
+
+ 
+ @include respond (tab_port) {
+  max-width: 60rem;
+  }
 
    @include clearfix;
 
@@ -12,7 +22,23 @@
  
        &:not(:last-child) {
         margin-right: $gutter-horizontal;
+
+        @include respond (tab_port) {
+         margin-right: 0;
+         margin-bottom: $gutter-vertical-small;
+        }
+   
      }
+
+
+     @include respond (tab_port) {
+      width: 100% !important;
+     }
+
+     @include respond (phone) {
+      width: 100% !important;
+     }
+
    }
 
  .col-1-of-2{

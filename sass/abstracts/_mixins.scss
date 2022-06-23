@@ -36,7 +36,7 @@ order: base + typogyaphy >  general layout + grid > page layout > components
 
   @mixin respond ($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: 37.5em) {@content};   //600px
+        @media (max-width: 38em) {@content};   //600px
     }
 
     @if $breakpoint ==tab_port{
