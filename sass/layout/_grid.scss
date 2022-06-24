@@ -6,13 +6,14 @@
 
     @include respond (tab_port) {
      margin-bottom: $gutter-vertical-small;
-     width: 50rem;
+      
      }
  }
 
  
  @include respond (tab_port) {
   max-width: 60rem;
+  padding: 0 3rem
   }
 
    @include clearfix;
