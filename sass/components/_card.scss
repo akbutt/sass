@@ -3,10 +3,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 43rem;
+  height: 47rem;
 
   &__side {
-    height: 43rem;
+    height: 47rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -83,7 +83,7 @@
     }
   }
   &__heading {
-    font-size: 2.3rem;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
     color: $color-white;
@@ -95,7 +95,7 @@
   }
 
   &__heading-span {
-    padding: 1rem 1.5rem;
+    padding:1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     &--1 {
@@ -123,7 +123,7 @@
   }
 
   &__details {
-    padding: 1rem;
+    padding: 3rem;
 
     ul {
       list-style: none;
@@ -132,7 +132,7 @@
       li {
         text-align: center;
         font-size: 1.5rem;
-        padding: 0.6rem;
+        padding: 1rem;
 
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
@@ -165,7 +165,58 @@
     font-size: 6rem;
     font-weight: 100;
   }
+                      /////////////////tab_port editing media queries
+
+@include respond (tab_port) {
+  background-color: $color-white;
+    height: auto;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    border-radius: 3px;
+    &__side {
+      height: auto;
+      position: relative;
+      
+      box-shadow: none;
+  
+      
+
+      &--back {
+        transform: rotateY(0deg);
+          clip-path: polygon(0 15%, 100% 0 , 100% 100%, 0 100%);
+       
+      }
+    }
+  
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+  
+    &__details {
+      padding:1rem 3rem;
+    }  
+
+   
+    ///back side styling
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding:7rem 4rem 4rem 4rem;
+     
+    }
+    &__price-box {
+      margin-bottom: 2rem;
+    }
+  
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
 }
+
+
 
 
 
