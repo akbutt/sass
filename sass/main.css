@@ -611,6 +611,11 @@ body {
   display: block;
   transition: all 0.3s;
 }
+@media (max-width: 56.25em) {
+  .form__input {
+    width: 100%;
+  }
+}
 .form__input:focus {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -648,6 +653,12 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block;
+}
+@media (max-width: 56.25em) {
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 .form__radio-input {
   display: none;
@@ -780,6 +791,11 @@ body {
     padding-left: 5rem;
   }
 }
+@media (max-width: 38em) {
+  .story {
+    transform: skewX(0);
+  }
+}
 .story__shape {
   width: 15rem;
   height: 15rem;
@@ -790,6 +806,11 @@ body {
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
 }
+@media (max-width: 38em) {
+  .story__shape {
+    transform: translateX(-3rem) skewX(0);
+  }
+}
 .story__img {
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
@@ -799,6 +820,11 @@ body {
 }
 .story__text {
   transform: skewX(12deg);
+}
+@media (max-width: 38em) {
+  .story__text {
+    transform: skewX(0);
+  }
 }
 .story__caption {
   position: absolute;
@@ -967,6 +993,11 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/hero.jpg);
+  }
+}
 @media (max-width: 38em) {
   .header {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -1008,13 +1039,13 @@ body {
 @media (max-width: 56.25em) {
   .navigation__button {
     top: 4rem;
-    right: 21rem;
+    right: 4rem;
   }
 }
 @media (max-width: 38em) {
   .navigation__button {
     top: 3rem;
-    right: 15rem;
+    right: 5rem;
   }
 }
 .navigation__background {
@@ -1031,13 +1062,13 @@ body {
 @media (max-width: 56.25em) {
   .navigation__background {
     top: 4.5rem;
-    right: 21rem;
+    right: 4rem;
   }
 }
 @media (max-width: 38em) {
   .navigation__background {
     top: 3.5rem;
-    right: 15.5rem;
+    right: 5rem;
   }
 }
 .navigation__nav {
@@ -1193,9 +1224,29 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 38rem;
+}
+@media (max-width: 75em) {
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../../img/nat-10.jpg);
+    background-size: cover;
+  }
+}
+@media (max-width: 56.25em) {
+  .book {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../../img/nat-10.jpg);
+  }
 }
 .book__form {
   width: 50%;
   padding: 6rem;
+}
+@media (max-width: 75em) {
+  .book__form {
+    width: 60%;
+  }
+}
+@media (max-width: 56.25em) {
+  .book__form {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
