@@ -11,6 +11,8 @@
 
     @include respond(tab_port){
         width: 100%;
+        padding: 3rem;
+        padding-left: 5rem;
     }
 
     &__shape{
