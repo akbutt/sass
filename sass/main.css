@@ -188,6 +188,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .heading-secondary {
+    padding-top: 5rem;
     font-size: 3rem;
   }
 }

@@ -57,6 +57,7 @@ body{
           letter-spacing: .2rem;
 
           @include respond(tab_port) {
+            padding-top: 5rem;
             font-size: 3rem;
           }
 
