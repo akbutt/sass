@@ -56,13 +56,20 @@ body{
           transition: all .2s;
           letter-spacing: .2rem;
 
+          @include respond(tab_land){
+            margin-bottom:0 ;
+            padding-left: 4rem;
+            text-align: center;
+            justify-content: center;
+           }
+
           @include respond(tab_port) {
-            padding-top: 5rem;
-            font-size: 3rem;
+            
+            font-size: 2rem;
           }
 
           @include respond(phone) {
-            font-size: 2.5rem;
+            font-size: 2rem;
           }
 
 
@@ -75,6 +82,11 @@ body{
 font-size: 1.4rem;
 font-weight: 700;
 text-transform: uppercase;
+
+@include respond(tab_land){
+ margin-bottom: 0;
+ text-align: center;
+}
 
     }
     .paragraph{

@@ -196,15 +196,22 @@ body {
   transition: all 0.2s;
   letter-spacing: 0.2rem;
 }
+@media only screen and (max-width: 75em) {
+  .heading-secondary {
+    margin-bottom: 0;
+    padding-left: 4rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
-    padding-top: 5rem;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 38em) {
   .heading-secondary {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .heading-secondary:hover {
@@ -216,6 +223,12 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 75em) {
+  .heading-tertiary {
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 .paragraph {
@@ -275,6 +288,24 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .btn, .btn:link, .btn:visited {
+    position: relative;
+    left: 18rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .btn, .btn:link, .btn:visited {
+    position: relative;
+    left: 13rem;
+  }
+}
+@media only screen and (max-width: 38em) {
+  .btn, .btn:link, .btn:visited {
+    position: relative;
+    left: 9rem;
+  }
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -740,9 +771,20 @@ body {
   transform: translate(-50%, -50%) scale(0.5);
   transition: all 0.4s 0.2s;
 }
+@media only screen and (max-width: 75em) {
+  .popup__content {
+    width: 50%;
+  }
+}
 .popup__left {
   width: 33.333333%;
   display: table-cell;
+}
+@media only screen and (max-width: 75em) {
+  .popup__left {
+    width: 100%;
+    display: table;
+  }
 }
 .popup__right {
   width: 66.666667%;
@@ -750,9 +792,22 @@ body {
   vertical-align: middle;
   padding: 3rem 5rem;
 }
+@media only screen and (max-width: 75em) {
+  .popup__right {
+    display: block;
+    width: 95%;
+  }
+}
 .popup__img {
   display: block;
   width: 100%;
+}
+@media only screen and (max-width: 75em) {
+  .popup__img {
+    display: inline-block;
+    width: 45%;
+    padding-left: 4rem;
+  }
 }
 .popup__text {
   font-size: 1.4rem;
@@ -766,6 +821,20 @@ body {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+@media only screen and (max-width: 75em) {
+  .popup__text {
+    font-size: 1.2rem;
+    letter-spacing: none;
+    text-align: center;
+    padding: 0;
+    -moz-column-count: 1;
+         column-count: 1;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    -moz-column-rule: none;
+         column-rule: none;
+  }
 }
 .popup:target {
   opacity: 1;
