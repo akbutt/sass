@@ -167,7 +167,9 @@
   }
                       /////////////////tab_port editing media queries
 
-@include respond (tab_port) {
+// @include respond (tab_port)
+@media only screen and (max-width: 56.25em),
+    only screen and (hover:none) {
   background-color: $color-white;
     height: auto;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
