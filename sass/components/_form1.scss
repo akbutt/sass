@@ -1,6 +1,7 @@
 .form {
+ 
   &__group:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
   }
 
   &__input {
@@ -10,12 +11,12 @@
     // font-family: inherit;
     // color: inherit;
     background-color: rgba($color-white, 0.5);
-    border: none;
-    outline: none;
     border-bottom: 3px solid transparent;
-    width: 99%;
+    width: 100%;
     display: block;
     transition: all .3s;
+  
+
     
     @include respond(tab_port) {
       width: 100%;
@@ -80,7 +81,7 @@ width: 2.5rem;
 border: 5px solid $color-primary;
 border-radius: 50%;
 display:inline-block;
-
+right: 1rem;
 // left: 32rem;
 top: .9rem;
 

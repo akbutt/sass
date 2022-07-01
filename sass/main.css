@@ -615,10 +615,8 @@ body {
   padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  outline: none;
   border-bottom: 3px solid transparent;
-  width: 99%;
+  width: 100%;
   display: block;
   transition: all 0.3s;
 }
@@ -687,6 +685,7 @@ body {
   border: 5px solid #55c57a;
   border-radius: 50%;
   display: inline-block;
+  right: 1rem;
   top: 0.9rem;
 }
 .form__radio-button::after {
