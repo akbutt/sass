@@ -292,19 +292,19 @@ body {
 @media only screen and (max-width: 75em) {
   .btn, .btn:link, .btn:visited {
     position: relative;
-    left: 18rem;
+   
   }
 }
 @media only screen and (max-width: 56.25em) {
   .btn, .btn:link, .btn:visited {
     position: relative;
-    left: 13rem;
+   
   }
 }
 @media only screen and (max-width: 38em) {
   .btn, .btn:link, .btn:visited {
     position: relative;
-    left: 9rem;
+ 
   }
 }
 .btn:hover {
